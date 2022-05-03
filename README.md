@@ -1,9 +1,12 @@
 # README
-URL             Action      Purpose
-/users          index       page to list all users
-/users/1        show        page to show user with id 1
-/users/new      new         page to make a new user
-/users/1/edit   edit        page to edit user with id 1
+HTTP            URL             Action      Purpose
+GET             /users          index       page to list all users
+GET             /users/1        show        page to show user with id 1
+GET             /users/new      new         page to make a new user
+POST            /users          create      create a new user
+GET             /users/1/       edit        edit page to edit user with id 1
+PATCH           /users/1        update      update user with id 1
+DELETE          /users/1        destroy     delete user with id 1
 
 
 
