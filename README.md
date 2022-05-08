@@ -9,7 +9,7 @@ PATCH           /users/1        update      update user with id 1
 DELETE          /users/1        destroy     delete user with id 1
 
 
-START FROM PAGE 218 (which is 196 in the doc)
+START FROM PAGE 300 (which is 278 in the doc)
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
