@@ -6,6 +6,8 @@ ruby "2.7.3"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.2", ">= 7.0.2.4"
 
+gem 'bcrypt', '3.1.13'
+
 gem "bootstrap-sass", "3.4.1"
 
 gem 'rails-controller-testing'
