@@ -67,6 +67,9 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test 'password should have a minimum length' do
+    # this is multiple assignment 
+    # we assign a value to password and its confirmation at the same time
+    # in this case, a string of length 5, constructed using string multiplication
     @user.password = @user.password_confirmation = 'a' * 5
     assert_not @user.valid?
   end

@@ -13,9 +13,11 @@ class User < ApplicationRecord
                     uniqueness: true
   # has_secure_password has built in functionality:
   # - ability to save a securely hashed password_digest attribute to the database
-  # - a pair of virtual attributes (password and password_confirmation) including presence validations upon object creation 
+  # - a pair of virtual attributes (password and password_confirmation) including presence validations upon object creation
   # and a validation requiring that they match
-  # an authenticate method that returns the user when the password is correct (and false otherwise)
+  # - an authenticate method that returns the user when the password is correct (and false otherwise)
+  # - has_secure_password method includes a presence validation, but it applies only to records with empty passwords,
+  # which allows users to create invalid passwords like '      ' (six spaces)
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }
 end
